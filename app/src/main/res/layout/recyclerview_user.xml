@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardview_users"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_padding" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/mili_padding"
+        android:background="@color/generalWhite">
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="@dimen/txt_medium_title_max"
+            android:autoSizeMinTextSize="@dimen/txt_medium_title_min"
+            android:autoSizeStepGranularity="@dimen/txt_steps_min_size"
+            android:autoSizeTextType="uniform"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/generalGray"
+            tools:targetApi="o"
+            tools:text="@string/username" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_latitude"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="@dimen/txt_medium_title_max"
+                android:autoSizeMinTextSize="@dimen/txt_medium_title_min"
+                android:autoSizeStepGranularity="@dimen/txt_steps_min_size"
+                android:autoSizeTextType="uniform"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/generalGray"
+                tools:targetApi="o"
+                tools:text="@string/latitude" />
+
+            <TextView
+                android:id="@+id/tv_longitude"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoSizeMaxTextSize="@dimen/txt_medium_title_max"
+                android:autoSizeMinTextSize="@dimen/txt_medium_title_min"
+                android:autoSizeStepGranularity="@dimen/txt_steps_min_size"
+                android:autoSizeTextType="uniform"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/generalGray"
+                tools:text="@string/longitude"
+                tools:targetApi="o" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="@dimen/txt_medium_title_max"
+            android:autoSizeMinTextSize="@dimen/txt_medium_title_min"
+            android:autoSizeStepGranularity="@dimen/txt_steps_min_size"
+            android:autoSizeTextType="uniform"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/generalGray"
+            tools:text="@string/user_email"
+            tools:targetApi="o" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

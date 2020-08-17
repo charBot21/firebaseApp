@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FirebaseApp</string>
+
+    <!-- Login -->
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+
+
+    <!-- Buttons -->
+    <string name="login">Iniciar sesión</string>
+    <string name="add_user">Agregar</string>
+
+
+    <!-- Cards -->
+    <string name="username">Nombre </string>
+    <string name="location">Ubicación</string>
+    <string name="latitude">Latitud: </string>
+    <string name="longitude">Longitud: </string>
+    <string name="user_email">Correo</string>
+    <string name="user_id">ID</string>
+
+
+    <!-- Message -->
+    <string name="error_connection">Error de conexión.</string>
+    <string name="success_login"> Bienvenido %s</string>
+    <string name="login_welcome_back"> ¡Bienvenido de vuelta! </string>
+    <string name="empty_fields_login">Por favor, ingresa los datos para iniciar sesión.</string>
+    <string name="invalid_user">El usuario o contraseña con incorrectos. Por favor, verifica.</string>
+    <string name="empty_fields_capture">Necesitas ingresar todos los campos para continuar</string>
+    <string name="network_failed">Hubo un problema de red. Por favor, vuelve a intentar</string>
+    <string name="save_data_to_db">Guardando datos en Cloud Storage</string>
+
+    <!-- Others -->
+    <string name="button">Button</string>
+    <string name="empty_hint"> </string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data>
+        <variable
+            name="addviewmodel"
+            type="com.cha.firebaseapp.ui.viewmodel.add.AddViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.AddActivity">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x_big_padding"
+            android:paddingRight="@dimen/x_big_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xx_big_padding"
+                android:autoSizeMaxTextSize="@dimen/txt_general_min"
+                android:autoSizeMinTextSize="@dimen/txt_general_max"
+                android:autoSizeStepGranularity="@dimen/txt_steps_size"
+                android:autoSizeTextType="uniform"
+                android:autofillHints=""
+                android:drawablePadding="@dimen/mili_padding"
+                android:fontFamily="@font/poppins_light"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:text="@={addviewmodel.userName}"
+                android:textColorHighlight="@color/generalWhite"
+                android:textColorHint="@color/generalWhite"
+                android:textColorLink="@color/generalWhite"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/et_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawablePadding="@dimen/mili_padding"
+                android:fontFamily="@font/poppins_light"
+                android:hint="@string/user_email"
+                android:inputType="textEmailAddress"
+                android:text="@={addviewmodel.userEmail}"
+                android:textColorHighlight="@color/generalWhite"
+                android:textColorHint="@color/generalWhite"
+                android:textColorLink="@color/generalWhite"
+                android:autoSizeMaxTextSize="@dimen/txt_general_min"
+                android:autoSizeMinTextSize="@dimen/txt_general_max"
+                android:autoSizeStepGranularity="@dimen/txt_steps_size"
+                android:autoSizeTextType="uniform"  tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/et_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawablePadding="@dimen/mili_padding"
+                android:fontFamily="@font/poppins_light"
+                android:hint="@string/user_id"
+                android:inputType="number"
+                android:text="@={addviewmodel.userID}"
+                android:textColorHighlight="@color/generalWhite"
+                android:textColorHint="@color/generalWhite"
+                android:textColorLink="@color/generalWhite"
+                android:autoSizeMaxTextSize="@dimen/txt_general_min"
+                android:autoSizeMinTextSize="@dimen/txt_general_max"
+                android:autoSizeStepGranularity="@dimen/txt_steps_size"
+                android:autoSizeTextType="uniform"  tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/buttonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x_big_padding"
+                android:autoSizeMaxTextSize="@dimen/txt_button_max"
+                android:autoSizeMinTextSize="@dimen/txt_button_min"
+                android:autoSizeStepGranularity="@dimen/txt_steps_size"
+                android:autoSizeTextType="uniform"  tools:targetApi="o"
+                android:onClick="@{addviewmodel::addUsers}"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/generalWhite" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

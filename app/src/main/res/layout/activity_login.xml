@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="loginviewmodel"
+            type="com.cha.firebaseapp.ui.viewmodel.login.LoginViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.view.LoginActivity">
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x_big_padding"
+            android:paddingRight="@dimen/x_big_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <EditText
+                android:id="@+id/et_user"
+                style="@style/topEdTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xx_big_padding"
+                android:autoSizeMaxTextSize="@dimen/txt_general_min"
+                android:autoSizeMinTextSize="@dimen/txt_general_max"
+                android:autoSizeStepGranularity="@dimen/txt_steps_size"
+                android:autoSizeTextType="uniform"
+                android:autofillHints=""
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="@dimen/mili_padding"
+                android:fontFamily="@font/poppins_light"
+                android:hint="@string/user"
+                android:inputType="text"
+                android:text="@={loginviewmodel.userEmail}"
+                android:textColorHighlight="@color/generalWhite"
+                android:textColorHint="@color/generalWhite"
+                android:textColorLink="@color/generalWhite"
+                tools:targetApi="o" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/bottomEdTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="@dimen/mili_padding"
+                android:fontFamily="@font/poppins_light"
+                android:hint="@string/user"
+                android:inputType="textPassword"
+                android:text="@={loginviewmodel.userPassword}"
+                android:textColorHighlight="@color/generalWhite"
+                android:textColorHint="@color/generalWhite"
+                android:textColorLink="@color/generalWhite"
+                android:autoSizeMaxTextSize="@dimen/txt_general_min"
+                android:autoSizeMinTextSize="@dimen/txt_general_max"
+                android:autoSizeStepGranularity="@dimen/txt_steps_size"
+                android:autoSizeTextType="uniform"  tools:targetApi="o" />
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/buttonTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x_big_padding"
+                android:autoSizeMaxTextSize="@dimen/txt_button_max"
+                android:autoSizeMinTextSize="@dimen/txt_button_min"
+                android:autoSizeStepGranularity="@dimen/txt_steps_size"
+                android:autoSizeTextType="uniform"  tools:targetApi="o"
+                android:onClick="@{loginviewmodel::validateUserInputs}"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/generalWhite" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

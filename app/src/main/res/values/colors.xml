@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- gradients -->
+    <color name="grayBlur">#99ACACAC</color>
+    <color name="whiteBlur">#99FFFFFF</color>
+
+    <!-- texts -->
+    <color name="generalGray">#707070</color>
+    <color name="generalWhite">#FFFFFF</color>
+
+    <!-- buttons -->
+    <color name="blue">#59ADEB</color>
+    <color name="transparente">#0000</color>
+</resources>

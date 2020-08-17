@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!--            Padding             -->
+    <dimen name="micro_padding">5dp</dimen>
+    <dimen name="nano_padding">8dp</dimen>
+    <dimen name="mili_padding">10dp</dimen>
+    <dimen name="small_padding">16dp</dimen>
+    <dimen name="big_padding">32dp</dimen>
+    <dimen name="x_big_padding">64dp</dimen>
+    <dimen name="xx_big_padding">132dp</dimen>
+
+    <!--            Text                -->
+    <dimen name="txt_steps_size">2sp</dimen>
+    <dimen name="txt_steps_min_size">1sp</dimen>
+
+    <dimen name="txt_general_min">6sp</dimen>
+    <dimen name="txt_general_max">12sp</dimen>
+
+    <dimen name="txt_mini_max">6sp</dimen>
+    <dimen name="txt_mini_min">4sp</dimen>
+
+
+    <!--           Titles              -->
+    <dimen name="txt_title_max">15sp</dimen>
+    <dimen name="txt_title_min">9sp</dimen>
+
+    <dimen name="txt_medium_title_max">18sp</dimen>
+    <dimen name="txt_medium_title_min">12sp</dimen>
+
+    <dimen name="txt_big_title_max">25sp</dimen>
+    <dimen name="txt_big_title_min">19sp</dimen>
+
+
+    <!--           Buttons              -->
+    <dimen name="txt_button_max">12sp</dimen>
+    <dimen name="txt_button_min">6sp</dimen>
+
+
+    <!--           ButtomSheet            -->
+    <dimen name="bs_height">300dp</dimen>
+
+
+</resources>

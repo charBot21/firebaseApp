@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="@dimen/mili_padding"
+    android:paddingLeft="@dimen/mili_padding"
+    android:paddingRight="@dimen/mili_padding"
+    android:paddingTop="@dimen/mili_padding">
+
+    <item>
+        <shape>
+            <solid
+                android:color="@color/grayBlur" />
+
+            <corners
+                android:bottomLeftRadius="5dp"
+                android:bottomRightRadius="5dp"/>
+        </shape>
+    </item>
+
+</layer-list>
